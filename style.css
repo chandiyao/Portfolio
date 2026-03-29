@@ -511,6 +511,7 @@ h3 {
 
 .contact .section-head h2::after {
   background: linear-gradient(90deg, var(--accent-pink) 0%, var(--accent) 100%);
+  margin-inline: auto;
 }
 
 /* =============================
