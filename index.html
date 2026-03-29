@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Personal IT portfolio website for showcasing skills, projects, and contact information."
+    />
+    <title>Chan Di Yao | IT Portfolio</title>
+
+    <!-- Google Font: clean and modern for portfolio websites -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- =========================
+         Header / Navigation
+    ========================== -->
+    <header class="site-header" id="top">
+      <nav class="navbar container" aria-label="Main navigation">
+        <a class="brand" href="#top">CDY</a>
+
+        <!-- Mobile menu button -->
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="main-nav"
+          aria-label="Toggle navigation menu"
+        >
+          Menu
+        </button>
+
+        <ul class="nav-links" id="main-nav">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- =========================
+           Hero Section
+      ========================== -->
+      <section class="hero section" id="hero">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <p class="eyebrow">Diploma in Information Technology</p>
+            <h1>Hi, I'm Chan Di Yao</h1>
+            <p class="section-text">
+              I build responsive web solutions, design intuitive user interfaces, and manage digital systems. Passionate about web development, WordPress, and creating seamless user experiences for real-world applications.
+            </p>
+
+            <!-- Hero call-to-action buttons -->
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#projects">View Projects</a>
+              <a class="btn btn-secondary" href="#contact">Contact Me</a>
+            </div>
+          </div>
+
+          <!-- Hero side panel for quick highlights -->
+          <aside class="hero-panel" aria-label="Quick profile summary">
+            <h2>Quick Profile</h2>
+            <ul>
+              <li>Focused on web and software development</li>
+              <li>Irontend & WordPress specialist</li>
+              <li>UI/UX design and responsive web development</li>
+              <li>Cloud hosting and admin systems experience</li>
+              <li>Seeking internship & graduate role
+          </aside>
+        </div>
+      </section>
+
+      <!-- =========================
+           About Section
+      ========================== -->
+      <section class="about section" id="about">
+        <div class="container section-head">
+          <h2>About Me</h2>
+          <p class="section-text">
+            I am a Diploma in Information Technology student specializing in web development,
+            UI/UX design, and digital systems. With hands-on experience in WordPress, WooCommerce,
+            and cloud platforms like AWS, I've built real-world solutions for e-commerce and
+            business management. I'm passionate about creating clean, user-centered interfaces and
+            solving practical problems through thoughtful design and code. Always eager to learn
+            new technologies and contribute to innovative projects.
+          </p>
+        </div>
+      </section>
+
+      <!-- =========================
+           Skills Section
+      ========================== -->
+      <section class="skills section" id="skills">
+        <div class="container">
+          <div class="section-head">
+            <h2>Skills</h2>
+            <p class="section-text">
+              Core technical capabilities and tools I currently use in development and coursework.
+            </p>
+          </div>
+
+          <!-- Card-style skills layout -->
+          <div class="cards-grid skills-grid">
+            <article class="card skill-card">
+              <h3>Web Technologies</h3>
+              <p>HTML, CSS, JavaScript, responsive design, ASP.NET, and modern web fundamentals.</p>
+            </article>
+            <article class="card skill-card">
+              <h3>WordPress & E-Commerce</h3>
+              <p>WordPress, Elementor, WooCommerce, payment systems, and theme customization.</p>
+            </article>
+            <article class="card skill-card">
+              <h3>Design & UX</h3>
+              <p>UI/UX design, wireframing, user research, and usability optimization.</p>
+            </article>
+            <article class="card skill-card">
+              <h3>Systems & Cloud</h3>
+              <p>AWS, GitHub, database basics, admin systems, and cloud hosting solutions.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+           Projects Section
+      ========================== -->
+      <section class="projects section" id="projects">
+        <div class="container">
+          <div class="section-head">
+            <h2>Projects</h2>
+            <p class="section-text">
+              Selected projects that demonstrate technical ability, clean code practices, and
+              practical outcomes.
+            </p>
+          </div>
+
+          <!-- Card-style project layout -->
+          <div class="cards-grid projects-grid">
+            <article class="card project-card">
+              <p class="card-tag">Web App</p>
+              <h3>FeedMe – Order & Admin System</h3>
+              <p>
+                A web-based food ordering platform with integrated admin dashboard, user authentication,
+                role-based access control, order tracking, and receipt management.
+              </p>
+              <ul class="project-features">
+                <li>User authentication & role management</li>
+                <li>Order placement & tracking</li>
+                <li>Admin dashboard for order & menu management</li>
+                <li>Receipt generation</li>
+              </ul>
+              <p class="tech-stack"><strong>Tech:</strong> HTML, CSS, JavaScript, ASP.NET, Database</p>
+              <div class="project-links">
+                <a href="#">GitHub</a>
+                <a href="#">Demo</a>
+              </div>
+            </article>
+
+            <article class="card project-card">
+              <p class="card-tag">WordPress</p>
+              <h3>Coffee Shop Ordering Website</h3>
+              <p>
+                A fully responsive e-commerce website for a coffee shop featuring menu display,
+                online ordering, WooCommerce integration, secure payment, and order history tracking.
+              </p>
+              <ul class="project-features">
+                <li>Responsive product showcase</li>
+                <li>WooCommerce integration</li>
+                <li>Secure payment gateway</li>
+                <li>Order history & customer dashboard</li>
+              </ul>
+              <p class="tech-stack"><strong>Tech:</strong> WordPress, Elementor, WooCommerce, Stripe/PayPal</p>
+              <div class="project-links">
+                <a href="#">Visit Site</a>
+                <a href="#">GitHub</a>
+              </div>
+            </article>
+
+            <article class="card project-card">
+              <p class="card-tag">UX/UI Design</p>
+              <h3>Inventory Management Prototype</h3>
+              <p>
+                A UI/UX-focused prototype for inventory and stock management systems, emphasizing
+                usability, intuitive workflows, and efficient data input design.
+              </p>
+              <ul class="project-features">
+                <li>Stock tracking interface</li>
+                <li>Input form optimization</li>
+                <li>Workflow simplification</li>
+                <li>User research-driven design</li>
+              </ul>
+              <p class="tech-stack"><strong>Tech:</strong> Figma, UI/UX Design, Prototyping</p>
+              <div class="project-links">
+                <a href="#">Prototype</a>
+                <a href="#">Case Study</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+<a href="mailto:chandiyo@example.com">chandiyo@example.com</a></p>
+            </article>
+            <article class="card contact-card">
+              <h3>GitHub</h3>
+              <p><a href="https://github.com/chandiyo" target="_blank">github.com/chandiyo</a></p>
+            </article>
+            <article class="card contact-card">
+              <h3>LinkedIn</h3>
+              <p><a href="https://linkedin.com/in/chandiyo" target="_blank">linkedin.com/in/chandiyo</a>
+              Download my resume for a full overview of education, technical skills, and project
+              experience.
+            </p>
+          </div>
+          <a class="btn btn-primary" href="assets/resume/resume.pdf">Download Resume</a>
+        </div>
+      </section>
+
+      <!-- =========================
+           Contact Section
+      ========================== -->
+      <section class="contact section" id=Chan Di Yao>
+        <div class="container">
+          <div class="section-head">
+            <h2>Contact</h2>
+            <p class="section-text">
+              Feel free to reach out for internship opportunities, collaborations, or networking.
+            </p>
+          </div>
+
+          <div class="cards-grid contact-grid">
+            <article class="card contact-card">
+              <h3>Email</h3>
+              <p>your.email@example.com</p>
+            </article>
+            <article class="card contact-card">
+              <h3>LinkedIn</h3>
+              <p>linkedin.com/in/yourname</p>
+            </article>
+            <article class="card contact-card">
+              <h3>GitHub</h3>
+              <p>github.com/yourusername</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =========================
+         Footer
+    ========================== -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>&copy; <span id="year"></span> Your Name. All rights reserved.</p>
+        <a href="#top">Back to top</a>
+      </div>
+    </footer>
+
+    <!-- Main JavaScript file -->
+    <script src="script.js"></script>
+  </body>
+</html>
