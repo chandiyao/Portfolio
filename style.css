@@ -291,16 +291,11 @@ h3 {
   min-height: 74px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  position: relative;
   flex-wrap: wrap;
   gap: 0.9rem;
   padding: 0.5rem 0;
-}
-
-.brand {
-  font-size: 1.15rem;
-  font-weight: 800;
-  letter-spacing: 0.5px;
 }
 
 .menu-toggle {
@@ -317,14 +312,21 @@ h3 {
   display: flex;
   align-items: center;
   gap: 0.55rem;
+  position: absolute;
+  right: 0;
 }
 
 .theme-toggle {
+  position: fixed;
+  top: 0.8rem;
+  right: 1rem;
+  z-index: 40;
   padding: 0.5rem 0.85rem;
   border-radius: 8px;
   border: 1px solid var(--border);
   background: var(--surface);
   color: var(--text);
+  box-shadow: var(--shadow-sm);
   font: inherit;
   cursor: pointer;
   transition: transform var(--transition-fast), border-color var(--transition-fast),
@@ -344,6 +346,7 @@ h3 {
   list-style: none;
   display: none;
   width: 100%;
+  margin-inline: auto;
   padding: 0.7rem;
   border: 1px solid var(--border);
   border-radius: 12px;
@@ -713,9 +716,14 @@ h3 {
     display: none;
   }
 
+  .nav-actions {
+    right: 0.4rem;
+  }
+
   .nav-links {
     display: flex;
     width: auto;
+    justify-content: center;
     border: none;
     border-radius: 0;
     padding: 0;
