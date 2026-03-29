@@ -605,6 +605,15 @@ h3 {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
+.contact .section-head {
+  text-align: center;
+}
+
+.contact .section-text {
+  margin-inline: auto;
+  text-align: center;
+}
+
 .contact-icons {
   display: flex;
   flex-wrap: wrap;
