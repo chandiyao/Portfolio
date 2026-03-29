@@ -7,6 +7,45 @@ if (yearElement) {
 }
 
 // =============================
+// Bright/Dark Theme Toggle
+// =============================
+const themeToggle = document.getElementById("theme-toggle");
+const rootElement = document.documentElement;
+const savedTheme = localStorage.getItem("themeMode");
+
+if (savedTheme === "dark") {
+  rootElement.setAttribute("data-theme", "dark");
+}
+
+function updateThemeButtonLabel() {
+  if (!themeToggle) {
+    return;
+  }
+
+  const isDark = rootElement.getAttribute("data-theme") === "dark";
+  themeToggle.textContent = isDark ? "Bright mode" : "Dark mode";
+  themeToggle.setAttribute("aria-pressed", String(isDark));
+}
+
+updateThemeButtonLabel();
+
+if (themeToggle) {
+  themeToggle.addEventListener("click", () => {
+    const isDark = rootElement.getAttribute("data-theme") === "dark";
+
+    if (isDark) {
+      rootElement.removeAttribute("data-theme");
+      localStorage.setItem("themeMode", "light");
+    } else {
+      rootElement.setAttribute("data-theme", "dark");
+      localStorage.setItem("themeMode", "dark");
+    }
+
+    updateThemeButtonLabel();
+  });
+}
+
+// =============================
 // Mobile Navigation Toggle
 // =============================
 const menuToggle = document.querySelector(".menu-toggle");

@@ -28,16 +28,23 @@
       <nav class="navbar container" aria-label="Main navigation">
         <a class="brand" href="#top">CDY</a>
 
-        <!-- Mobile menu button -->
-        <button
-          class="menu-toggle"
-          type="button"
-          aria-expanded="false"
-          aria-controls="main-nav"
-          aria-label="Toggle navigation menu"
-        >
-          Menu
-        </button>
+        <div class="nav-actions">
+          <!-- Mobile menu button -->
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="main-nav"
+            aria-label="Toggle navigation menu"
+          >
+            Menu
+          </button>
+
+          <!-- Bright/Dark mode toggle -->
+          <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle color theme">
+            Dark mode
+          </button>
+        </div>
 
         <ul class="nav-links" id="main-nav">
           <li><a href="#hero">Home</a></li>
@@ -67,6 +74,12 @@
             <div class="hero-actions">
               <a class="btn btn-primary" href="#projects">View Projects</a>
               <a class="btn btn-secondary" href="#contact">Contact Me</a>
+            </div>
+
+            <!-- Tiny decorative images -->
+            <div class="hero-stickers" aria-hidden="true">
+              <img src="assets/images/sparkle.svg" alt="" />
+              <img src="assets/images/rocket.svg" alt="" />
             </div>
           </div>
 
